@@ -28,13 +28,13 @@ function staticLoadPlaces() {
 var models = [
     {
         url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
-        scale: '0.5 0.5 0.5',
+        scale: '1.5 1.5 1.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
     },
     {
         url: 'https://jgatzis.github.io/ar/assets/jaguar/scene.gltf',
-        scale: '0.5 0.5 0.5',
+        scale: '1.5 1.5 1.5',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
