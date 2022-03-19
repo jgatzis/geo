@@ -18,6 +18,11 @@ function staticLoadPlaces() {
         scale: '1.5 1.5 1.5',
         info: 'Magnemite, Lv. 5, HP 10/10',rotation: '0 180 0',
         },
+       { name: 'Spiti', location: {     lat:39.37000,      lng: 21.98032,  },
+           url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
+        scale: '1.5 1.5 1.5',
+        info: 'Magnemite, Lv. 5, HP 10/10',rotation: '0 180 0',
+        },
     ];
 }
 
