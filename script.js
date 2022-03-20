@@ -9,7 +9,7 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {  name: '11111', location: {      lat:39.369915,  lng: 21.927914, },
-           modelNr : 1,
+           modelNr : 0,
            scale: '1.5 1.5 1.5',
            info: '11111', rotation: '0 180 0',
         },
