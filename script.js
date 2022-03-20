@@ -9,17 +9,17 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {  name: '11111', location: {      lat:39.369915,  lng: 21.927914, },
-           url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
+           modelNr : 0,
            scale: '1.5 1.5 1.5',
            info: '11111', rotation: '0 180 0',
         },
         { name: '22222', location: {     lat:39.369715,      lng: 21.927714,  },
-           url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
+         modelNr : 1,
         scale: '1.5 1.5 1.5',
         info: '222',rotation: '0 180 0',
         },
        { name: 'Spiti', location: {     lat:39.37000,      lng: 21.98032,  },
-           url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
+         modelNr : 1,
         scale: '1.5 1.5 1.5',
         info: 'spiti',rotation: '0 180 0',
         },
@@ -54,8 +54,7 @@ var setModel = function (model, entity) {
     if (model.position) {
         entity.setAttribute('position', model.position);
     }
-
-    entity.setAttribute('gltf-model', model.url);
+   entity.setAttribute('gltf-model', model.url);
 
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
@@ -67,10 +66,11 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
-        let url = place.url;
+        let modelNr = place.modelNr;
         let model = document.createElement('a-entity');
              model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
              model.setAttribute('url', `url: ${url};`);
+        modekIndex= modelNr;
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
