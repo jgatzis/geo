@@ -11,6 +11,14 @@ const loadPlaces = function(coords) {
 
             }
         },
+        {
+            name: "spiti2",
+            location: {
+                lat: 39.36892, // add here latitude if using static data
+                lng: 21.92696, // add here longitude if using static data
+
+            }
+        },
     ];
 
   //  if (method === 'api') {
@@ -73,7 +81,7 @@ window.onload = () => {
                     icon.setAttribute('src', './map-marker.png');
 
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                    icon.setAttribute('scale', '2, 2');
+                    icon.setAttribute('scale', '1, 1');
 
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
