@@ -11,17 +11,17 @@ function staticLoadPlaces() {
         {  name: 'Pokèmon', location: {      lat:39.369915,  lng: 21.927914, },
            url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
             scale: '1.5 1.5 1.5',
-             info: 'Magnemite, Lv. 5, HP 10/10', rotation: '0 180 0',
+             info: '11111', rotation: '0 180 0',
         },
         { name: 'Pokèmon2', location: {     lat:39.369715,      lng: 21.927714,  },
            url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
         scale: '1.5 1.5 1.5',
-        info: 'Magnemite, Lv. 5, HP 10/10',rotation: '0 180 0',
+        info: '222',rotation: '0 180 0',
         },
        { name: 'Spiti', location: {     lat:39.37000,      lng: 21.98032,  },
            url: 'https://jgatzis.github.io/ar/assets/plane/scene.gltf',
         scale: '1.5 1.5 1.5',
-        info: 'Magnemite, Lv. 5, HP 10/10',rotation: '0 180 0',
+        info: 'spiti',rotation: '0 180 0',
         },
     ];
 }
@@ -70,7 +70,7 @@ function renderPlaces(places) {
         let url =place.url;
         let model = document.createElement('a-entity');
              model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-             model.setAttribute('url', `url: ${latitude};`);
+             model.setAttribute('url', `url: ${url};`);
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
