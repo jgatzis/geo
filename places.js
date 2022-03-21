@@ -72,7 +72,7 @@ window.onload = () => {
                             
                             const img = document.createElement('span');
                               const container2 = document.createElement('div');
-                              container2.setAttribute('id', 'place-img');
+                              container2.setAttribute('id', 'place-label');
                             img.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png');
                           
                       img.src ='https://jgatzis.github.io/ar/assets/photos/1.png';
