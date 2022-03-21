@@ -76,7 +76,7 @@ window.onload = () => {
 
                     
                     const entity = document.createElement('a-entity');
-                    entity.setAttribute('text', 'test');
+                    entity.setAttribute('text', "test");
                     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                     entity.setAttribute('scale', '101, 101');
                     // add place icon
