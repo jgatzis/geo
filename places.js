@@ -70,12 +70,12 @@ window.onload = () => {
                         //    container.appendChild(label);
                          //   document.body.appendChild(container);
                             
-                            const img = document.createElement('span');
-                            const container2 = document.createElement('div');
-                            container2.setAttribute('id', 'place-image');
-                            img.src ='https://jgatzis.github.io/ar/assets/photos/1.png'
-                            container.appendChild(img);
-                            document.body.appendChild(container2);
+                            const img = document.createElement('img');
+                            img.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png');
+                          
+                            img.src ='https://jgatzis.github.io/ar/assets/photos/1.png';
+                        
+                            document.body.appendChild(img);
                     <!--
                      setTimeout(() => {
                                 container.parentElement.removeChild(container);
