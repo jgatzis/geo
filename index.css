@@ -48,3 +48,10 @@ div.debug {
     font-size: 1.5em;
     border-radius: 5px;
 }
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
