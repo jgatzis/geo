@@ -27,39 +27,7 @@ const loadPlaces = function(coords) {
 
     return Promise.resolve(PLACES);
 };
-<!--
 
-function loadPlaceFromAPIs(position) {
-    const params = {
-        radius: 300,   
-        clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',
-        clientSecret: '',
-        version: '20300101',    
-    };
-
-   
-    const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-
-    // Foursquare API
-    const endpoint = `${corsProxy}https://api.foursquare.com/v2/venues/search?intent=checkin
-        &ll=${position.latitude},${position.longitude}
-        &radius=${params.radius}
-        &client_id=${params.clientId}
-        &client_secret=${params.clientSecret}
-        &limit=15
-        &v=${params.version}`;
-    return fetch(endpoint)
-        .then((res) => {
-            return res.json()
-                .then((resp) => {
-                    return resp.response.venues;
-                })
-        })
-        .catch((err) => {
-            console.error('Error with places API', err);
-        })
-};
--->
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
