@@ -54,10 +54,7 @@ window.onload = () => {
                     icon.setAttribute('scale', '1, 1');
 
                     
-                   const entity = document.createElement('a-image');
-                   entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); 
-                   entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`); 
-                    scene.appendChild(entity);
+                  
                     
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
@@ -85,7 +82,12 @@ window.onload = () => {
                     };
 
                     icon.addEventListener('click', clickListener);
-                    
+                   const entity = document.createElement('a-image');
+                
+                   entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`); 
+                   entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); 
+                   entity.setAttribute('scale', '1, 1');
+                   scene.appendChild(entity); 
                     scene.appendChild(icon);
                     
                 });
