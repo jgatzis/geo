@@ -78,8 +78,9 @@ window.onload = () => {
                     const entity = document.createElement('a-text');
                    <!-- entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); -->
                     entity.setAttribute('value', 'test');
+                    
                     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-                     entity.setAttribute('scale', '100, 100');
+                     entity.setAttribute('scale', '100, 100 100');
                       scene.appendChild(entity);
                     // add place icon
                     const icon = document.createElement('a-image');
