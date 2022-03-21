@@ -8,7 +8,7 @@ const loadPlaces = function(coords) {
             location: {
                 lat: 39.36992, // add here latitude if using static data
                 lng: 21.92796, // add here longitude if using static data
-
+                src: 'https://jgatzis.github.io/ar/assets/photos/1.png',
             }
         },
         {
@@ -16,7 +16,7 @@ const loadPlaces = function(coords) {
             location: {
                 lat: 39.36892, // add here latitude if using static data
                 lng: 21.92696, // add here longitude if using static data
-
+                src: 'https://jgatzis.github.io/ar/assets/photos/1.png',
             }
         },
     ];
@@ -43,12 +43,9 @@ window.onload = () => {
                     const longitude = place.location.lng;
 
                     
-                    const entity = document.createElement('a-text');
-                   <!-- entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); -->
-                    entity.setAttribute('value', 'test');
-                    
-                    entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-                     entity.setAttribute('scale', '100, 100 100');
+                    const entity = document.createElement('a-image');
+                    entity.setAttribute('src', ${src}); 
+                    entity.setAttribute('scale', '100, 100 100');
                       scene.appendChild(entity);
                     // add place icon
                     const icon = document.createElement('a-image');
