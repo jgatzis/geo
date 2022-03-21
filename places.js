@@ -4,7 +4,7 @@ const loadPlaces = function(coords) {
 
     const PLACES = [
         {
-            name: "x",
+            name: "z",
             location: {
                 lat: 39.36992, // add here latitude if using static data
                 lng: 21.92796, // add here longitude if using static data
@@ -12,7 +12,7 @@ const loadPlaces = function(coords) {
             }
         },
         {
-            name: "xx",
+            name: "zz",
             location: {
                 lat: 39.36892, // add here latitude if using static data
                 lng: 21.92696, // add here longitude if using static data
@@ -73,7 +73,7 @@ window.onload = () => {
                             const img = document.createElement('span');
                               const container2 = document.createElement('div');
                               container2.setAttribute('id', 'img');
-                            img.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png');
+                       //     img.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png');
                           
                       img.src ='https://jgatzis.github.io/ar/assets/photos/1.png';
                         
