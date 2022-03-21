@@ -43,11 +43,7 @@ window.onload = () => {
                     const longitude = place.location.lng;
 
                     
-                    const entity = document.createElement('a-image');
-                    entity.setAttribute('src', `${src}`); 
-                    entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-                    entity.setAttribute('scale', '100, 100 100');
-                      scene.appendChild(entity);
+                  
                     // add place icon
                     const icon = document.createElement('a-image');
                     icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
@@ -57,6 +53,13 @@ window.onload = () => {
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
                     icon.setAttribute('scale', '1, 1');
 
+                    
+                    const entity = document.createElement('a-image');
+                    entity.setAttribute('src', $src); 
+                    entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
+                    entity.setAttribute('scale', '100, 100 100');
+                      scene.appendChild(entity);
+                    
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
                     const clickListener = function(ev) {
