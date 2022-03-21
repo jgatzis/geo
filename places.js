@@ -44,7 +44,8 @@ window.onload = () => {
 
                     
                     const entity = document.createElement('a-image');
-                    entity.setAttribute('src', ${src}); 
+                    entity.setAttribute('src', `${src}`); 
+                    entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                     entity.setAttribute('scale', '100, 100 100');
                       scene.appendChild(entity);
                     // add place icon
