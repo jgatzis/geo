@@ -49,11 +49,8 @@ window.onload = () => {
                     icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                     icon.setAttribute('name', place.name);
                     icon.setAttribute('src', './map-marker.png');
-
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                    icon.setAttribute('scale', '1, 1');
-
-                    
+                    icon.setAttribute('scale', '1, 1');                
                   
                     
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
@@ -73,21 +70,29 @@ window.onload = () => {
                             label.innerText = name;
                             container.appendChild(label);
                             document.body.appendChild(container);
+                            
+                            const img = document.createElement('span');
+                            const container2 = document.createElement('div');
+                            container2.setAttribute('id', 'place-image');
+                            img.src ='https://jgatzis.github.io/ar/assets/photos/1.png'
+                            container.appendChild(img);
+                            document.body.appendChild(container2);
                     <!--
-                            setTimeout(() => {
-                                container.parentElement.removeChild(container);
-                            }, 1500);
+                       //     setTimeout(() => {
+                            //    container.parentElement.removeChild(container);
+                       //     }, 1500);
                             -->
                         }
                     };
 
                     icon.addEventListener('click', clickListener);
-                   const entity = document.createElement('a-image');
+                 //  const entity = document.createElement('a-image');
                 
-                   entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`); 
-                   entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); 
-                   entity.setAttribute('scale', '1, 1');
-                   scene.appendChild(entity); 
+              //     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`); 
+                //   entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); 
+                //   entity.setAttribute('scale', '1, 1');           
+                 //  scene.appendChild(entity); 
+                    
                     scene.appendChild(icon);
                     
                 });
