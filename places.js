@@ -41,8 +41,7 @@ window.onload = () => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
-
-                    
+                   
                   
                     // add place icon
                     const icon = document.createElement('a-image');
@@ -52,7 +51,7 @@ window.onload = () => {
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
                     icon.setAttribute('scale', '1, 1');                
                   
-                    
+                   
                     icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
                     const clickListener = function(ev) {
@@ -78,9 +77,9 @@ window.onload = () => {
                             container.appendChild(img);
                             document.body.appendChild(container2);
                     <!--
-                       //     setTimeout(() => {
-                            //    container.parentElement.removeChild(container);
-                       //     }, 1500);
+                     setTimeout(() => {
+                                container.parentElement.removeChild(container);
+                          }, 1500);
                             -->
                         }
                     };
