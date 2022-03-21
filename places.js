@@ -75,9 +75,9 @@ window.onload = () => {
                     const longitude = place.location.lng;
 
                     
-                    const entity = document.createElement('a-text');
+                    const entity = document.createElement('a-entity');
                    <!-- entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); -->
-                    entity.setAttribute('value', 'test');
+                    entity.setAttribute('text', 'test');
                     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                       scene.appendChild(entity);
                     // add place icon
