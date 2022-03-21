@@ -74,6 +74,11 @@ window.onload = () => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
 
+                    
+                    const entity = document.createElement('a-entity');
+                    entity.setAttribute('text', 'test');
+                    entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
+                    entity.setAttribute('scale', '101, 101');
                     // add place icon
                     const icon = document.createElement('a-image');
                     icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
