@@ -55,7 +55,7 @@ window.onload = () => {
 
                     
                     const entity = document.createElement('a-image');
-                    entity.setAttribute('src', $src); 
+                    entity.setAttribute('src', 'https://jgatzis.github.io/ar/assets/photos/1.png'); 
                     entity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                     entity.setAttribute('scale', '100, 100 100');
                       scene.appendChild(entity);
