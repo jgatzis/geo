@@ -4,7 +4,7 @@ const loadPlaces = function(coords) {
 
     const PLACES = [
         {
-            name: "spiti",
+            name: "x",
             location: {
                 lat: 39.36992, // add here latitude if using static data
                 lng: 21.92796, // add here longitude if using static data
@@ -12,7 +12,7 @@ const loadPlaces = function(coords) {
             }
         },
         {
-            name: "spiti2",
+            name: "xx",
             location: {
                 lat: 39.36892, // add here latitude if using static data
                 lng: 21.92696, // add here longitude if using static data
