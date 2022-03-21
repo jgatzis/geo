@@ -100,10 +100,11 @@ window.onload = () => {
                             label.innerText = name;
                             container.appendChild(label);
                             document.body.appendChild(container);
-
+                    <!--
                             setTimeout(() => {
                                 container.parentElement.removeChild(container);
                             }, 1500);
+                            -->
                         }
                     };
 
