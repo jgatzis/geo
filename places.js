@@ -27,7 +27,7 @@ const loadPlaces = function(coords) {
 
     return Promise.resolve(PLACES);
 };
-
+<!--
 // getting places from REST APIs
 function loadPlaceFromAPIs(position) {
     const params = {
@@ -59,7 +59,7 @@ function loadPlaceFromAPIs(position) {
             console.error('Error with places API', err);
         })
 };
-
+-->
 
 window.onload = () => {
     const scene = document.querySelector('a-scene');
