@@ -63,12 +63,12 @@ window.onload = () => {
                         const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
                         if (el && el === ev.target) {
-                            const label = document.createElement('span');
-                            const container = document.createElement('div');
-                            container.setAttribute('id', 'place-label');
-                            label.innerText = name;
-                            container.appendChild(label);
-                            document.body.appendChild(container);
+                        //    const label = document.createElement('span');
+                        //    const container = document.createElement('div');
+                        //    container.setAttribute('id', 'place-label');
+                        //    label.innerText = name;
+                        //    container.appendChild(label);
+                         //   document.body.appendChild(container);
                             
                             const img = document.createElement('span');
                             const container2 = document.createElement('div');
