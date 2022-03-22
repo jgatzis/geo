@@ -9,7 +9,7 @@ const loadPlaces = function(coords) {
                 lat: 39.36992, // add here latitude if using static data
                 lng: 21.92796, // add here longitude if using static data              
             },
-              src: "https://jgatzis.github.io/ar/assets/photos/1.png"
+              srcImg: "https://jgatzis.github.io/ar/assets/photos/1.png"
         },
         {
             name: "zz",
@@ -17,7 +17,7 @@ const loadPlaces = function(coords) {
                 lat: 39.36892, // add here latitude if using static data
                 lng: 21.92696, // add here longitude if using static data             
             },
-              src: "https://jgatzis.github.io/ar/assets/photos/1.png"
+              srcImg: "https://jgatzis.github.io/ar/assets/photos/1.png"
         },
     ];
 
@@ -41,6 +41,7 @@ window.onload = () => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
+                    const srcImage =  place.srcImg;
                   
                    
                   
@@ -71,7 +72,7 @@ window.onload = () => {
                             container.appendChild(label);
                            document.body.appendChild(container);
                            
-                            window.open( place.src);
+                            window.open( srcImage);
                         
                        //     const img = document.createElement('span');
                          //     const container2 = document.createElement('div');
