@@ -41,7 +41,7 @@ window.onload = () => {
                 places.forEach((place) => {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
-                    const srcImg = place.src;
+                  
                    
                   
                     // add place icon
@@ -71,7 +71,7 @@ window.onload = () => {
                             container.appendChild(label);
                            document.body.appendChild(container);
                            
-                            window.open(srcImg);
+                            window.open( place.src);
                         
                        //     const img = document.createElement('span');
                          //     const container2 = document.createElement('div');
