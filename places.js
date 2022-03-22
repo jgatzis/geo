@@ -7,17 +7,17 @@ const loadPlaces = function(coords) {
             name: "z",
             location: {
                 lat: 39.36992, // add here latitude if using static data
-                lng: 21.92796, // add here longitude if using static data
-                src: "https://jgatzis.github.io/ar/assets/photos/1.png",
-            }
+                lng: 21.92796, // add here longitude if using static data              
+            },
+              src: "https://jgatzis.github.io/ar/assets/photos/1.png"
         },
         {
             name: "zz",
             location: {
                 lat: 39.36892, // add here latitude if using static data
-                lng: 21.92696, // add here longitude if using static data
-                src: "https://jgatzis.github.io/ar/assets/photos/1.png",
-            }
+                lng: 21.92696, // add here longitude if using static data             
+            },
+              src: "https://jgatzis.github.io/ar/assets/photos/1.png"
         },
     ];
 
