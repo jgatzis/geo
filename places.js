@@ -59,7 +59,7 @@ window.onload = () => {
                     icon.setAttribute('name', place.name);
                     icon.setAttribute('src', './map-marker.png');
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                    icon.setAttribute('look-at','[camera]');
+                    icon.setAttribute('look-at','[gps-camera]');
                     icon.setAttribute('scale', '10, 10');                
                   
                    
