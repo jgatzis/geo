@@ -19,6 +19,14 @@ const loadPlaces = function(coords) {
             },
               srcImg: "https://jgatzis.github.io/ar/assets/photos/1.png"
         },
+         {
+            name: "2ogel",
+            location: {
+                lat: 39.37553, // add here latitude if using static data
+                lng: 21.90995, // add here longitude if using static data             
+            },
+              srcImg: "https://jgatzis.github.io/geo/photos/arni.jpeg"
+        },
     ];
 
   //  if (method === 'api') {
