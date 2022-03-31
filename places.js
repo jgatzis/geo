@@ -81,17 +81,17 @@ window.onload = () => {
                             container.appendChild(label);
                            document.body.appendChild(container);
                            
-                          //  window.open( srcImage);
+                         window.open( srcImage);
                         
-                            const img = document.createElement('span');
-                            const container2 = document.createElement('div');
-                            container2.setAttribute('id', 'img');
-                             img.setAttribute('src', srcImage);
+                       //     const img = document.createElement('span');
+                         //   const container2 = document.createElement('div');
+                          //  container2.setAttribute('id', 'img');
+                           //  img.setAttribute('src', srcImage);
                           
                      // img.src ='https://jgatzis.github.io/ar/assets/photos/1.png';
                         
-                            document.body.appendChild(img);
-                           document.body.appendChild(container2);
+                          //  document.body.appendChild(img);
+                          // document.body.appendChild(container2);
                     <!--
                      setTimeout(() => {
                                 container.parentElement.removeChild(container);
